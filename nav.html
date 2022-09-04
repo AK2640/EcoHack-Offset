@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    
+
+    <div class="container">
+<div class="car">
+    <img src="./Assets/car.png"  class="car-icon">
+    <h2 class="header-car">Car</h2>
+    <p class="car-explain">Carbon Offsetting is an action intended to compensate for the emission of carbon dioxide into the atmosphere as a result of industrial or other human activity, especially when quantified and traded as part of a commercial program (Oxford). You can Offset Emissions By Your Vehicle Here. </p>
+    <button class="go-car">Go</button>
+</div>
+
+
+<div class="plane">
+    <img src="./Assets/Plane.png"class="plane-icon">
+    <h2 class="header-plane">Plane</h2>
+    <p class="plane-explain">Carbon Offsetting is an action intended to compensate for the emission of carbon dioxide into the atmosphere as a result of industrial or other human activity, especially when quantified and traded as part of a commercial program (Oxford). You can Offset Emissions By Your Plane Travel Here.</p>
+    <button class="go-plane">Go</button>
+</div>
+<div class="perks">
+    <img src="./Assets/Leaf.png" class="perk-icon">
+    <h2 class="header-perks">Perks</h2>
+        <p class="perk-explain">Offset Offers a Variety Of Perks For Offsetting Your Carbon Emissions. You can learn about Benifits You can Get Through Offset By Visiting This Section.
+            <button class="go-perk">Go</button>
+        </div>
+</div>
+
+<script>
+    document.querySelector('.go-perk').addEventListener('click', function(){
+        window.location.href = 'perk.html';
+    })
+
+    document.querySelector('.go-plane').addEventListener('click', function(){
+        window.location.href = 'plane.html';
+    })
+
+    document.querySelector('.go-car').addEventListener('click', function(){
+        window.location.href = 'car.html';
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+:root {
+    --bg: rgba(236, 182, 101, 0.5);;
+    --btn-sign-bg:  rgb(95, 167, 75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ background: var(--bg);
+}
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    width: 0;
+    height: 2.5px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-header {
+    font-size: 25px;
+    margin-top: 400px;
+    letter-spacing: 3pxpx;
+    font-weight: lighter;
+    text-align: center;
+    opacity: 100%;
+    animation: loader-heading 3s 4s forwards ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.line-animate-add {
+    animation: lineAnimate 5s forwards ease;
+}
+
+.loader-header-animate {
+
+}
+
+.main {
+    opacity: 0;
+}
+
+.fade-in {
+animation: fade 1s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 100%;
+    }
+}
+@keyframes lineAnimate {
+    0% {
+        width: 0;
+    } 95% {
+        width: 90%
+    } 100% {
+        display: none;
+    }
+}
+
+@keyframes loader-heading {
+    0% {
+        opacity: 100%;
+    } 100% {
+        opacity: 0%;
+    }
+}
+
+.main {
+   
+    width: 100%;
+    height: 100%;
+}
+.sign-in-header{
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: -50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sign-in-text {
+    margin-top: 40px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sign-in-image {
+    position: absolute;
+    left: 55%;
+    top: 25%;
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(35px);
+    }
+}
+
+.sign-in-textWrapper {
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+.sign-in-btn {
+    margin-left: 150px;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: var(--btn-sign-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.sign-in-btn:hover {
+    background:rgb(32, 95, 15)
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="loader">
+        <h1 class="loading-header">LOADING</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="main">
+       
+        
+        <div class="sign-in">
+
+            <div class="sign-in-textWrapper">
+            <img src="./Assets/floating-city.png"class="sign-in-image">
+            <h1 class="sign-in-header">Our Values</h1>
+            <p class="sign-in-text">Offset Values Sustainable Solutions to Everyday Habits that are a large Contributor <br> to Todays Climate Crisis. Offset is Decreasing Carbon Emissions in ways that are <br>beneficial to everyone.</p>
+        </div>
+            <button class="sign-in-btn" >Sign In</button>
+        </div>
+
+      
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+    <script>
+const main = document.querySelector('.main');
+
+main.classList.add('hidden')
+
+           document.querySelector('.sign-in-btn').addEventListener('click', function(){
+    window.location.href = 'nav.html';
+   
+   });
+
+   setTimeout(function(){
+   main.classList.remove('hidden')
+   main.classList.add("fade-in")
+ }, 5800)
+    </script>
+</body>
+</html>
